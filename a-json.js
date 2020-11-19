@@ -25,6 +25,9 @@ const fs = require('fs')
 // Get the data using dot notation
 // console.log(data.title)
 
+
+//1. Exercises
+
 const newDataBuffer = fs.readFileSync('a-json.json')
 const newDataJSON = newDataBuffer.toString()
 
@@ -35,5 +38,4 @@ ownData.age = 32
 
 const veroData = JSON.stringify(ownData)
 fs.writeFileSync('a-json.json', veroData)
-// console.log(veroData)
 
