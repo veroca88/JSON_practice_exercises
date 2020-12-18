@@ -9,7 +9,7 @@
 
 const add = (num1, num2, callback) => {
     setTimeout(() => {
-        // console.log('Two seconds are up')
+        console.log('Two seconds are up')
         const sum = num1 + num2
         callback(sum)
         
@@ -17,6 +17,7 @@ const add = (num1, num2, callback) => {
     
 }
 
-add(1, 4, (sum) => {
-    console.log(sum)
+//sumArg is the argument that represents the callback
+add(1, 4, (sumArg) => {
+    console.log(sumArg)
 })
